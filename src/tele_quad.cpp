@@ -29,7 +29,7 @@ int main(int argc, char **argv)
                 case 'a':
                     if( status == 0) {
 	         	    std::cout << " 'a' key pressed!  This will do biped->quad_ready! \n";
-                            system("/home/hubo/hongfei/otherRepo/hubo-read-trajectory/hubo-read-trajectory -f 25 -i -n /home/hubo/myRepo/trajs/quad_Initial.txt");
+                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 25 -i -n /home/hubo/hongfei/myRepos/trajs/quad_Initial.txt");
                             status = 1;
                              break;
                     }
@@ -44,7 +44,7 @@ int main(int argc, char **argv)
                     if( status == 1 ) {
                             std::cout << "'d' key pressed!  This will do quad->biped!  \n";
                             //system("./hubo-read-trajectory -f 25 -n quad_Initial_back.traj");
-                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 25 -i -n /home/hubo/myRepo/trajs/quad_Initial_back.txt");
+                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 25 -i -n /home/hubo/hongfei/myRepos/trajs/quad_Initial_back.txt");
                             status = 0;
                             break;
                     }
@@ -58,7 +58,7 @@ int main(int argc, char **argv)
                  case 'w':
                     if( status == 1) {
                             std::cout << "'w' key pressed!  This will move forward!  \n";
-                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 25 -i -n /home/hubo/myRepo/trajs/quad_Step_forward.txt");
+                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 25 -i -n /home/hubo/hongfei/myRepos/trajs/quad_Step_forward.txt");
                             break;
                     } 
                     if( status == 0) {
@@ -71,7 +71,7 @@ int main(int argc, char **argv)
                     if(status ==1) {
                             std::cout << "'s' key pressed!  This will move backward!  \n";
                             //system("./hubo-read-trajectory -f 25 -n quad_Step_backward.traj");
-                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 25 -i -n /home/hubo/myRepo/trajs/quad_Step_backward.txt");
+                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 25 -i -n /home/hubo/hongfei/myRepos/trajs/quad_Step_backward.txt");
                             break;
                     }
                     if( status == 0 ) {
