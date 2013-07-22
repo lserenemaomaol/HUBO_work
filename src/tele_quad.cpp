@@ -58,7 +58,6 @@ int main(int argc, char **argv)
                  case 'w':
                     if( status == 1) {
                             std::cout << "'w' key pressed!  This will move forward!  \n";
-                            //system("./hubo-read-trajectory -f 25 -n quad_Step_forward.traj");/
                             system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 25 -i -n /home/hubo/myRepo/trajs/quad_Step_forward.txt");
                             break;
                     } 
