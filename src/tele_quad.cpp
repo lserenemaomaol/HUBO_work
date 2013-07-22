@@ -28,54 +28,58 @@ int main(int argc, char **argv)
             switch (c) {
                 case 'a':
                     if( status == 0) {
-	         	    std::cout << " 'a' key pressed!  This will do biped->quad_ready! \n";
+	         	    std::cout << " 'A' key pressed!  This will do biped->quad_ready! \n";
                             system("/home/hubo/hongfei/otherRepo/hubo-read-trajectory/hubo-read-trajectory -f 25 -i -n /home/hubo/myRepo/trajs/quad_Initial.txt");
+                            std::cout << " Motion in progress: biped -> quad_ready !\n";
                             status = 1;
                              break;
                     }
                     
                     if( status == 1)  {
-                            std::cout << "this motion is illegal!   Robot is in quad_mode! \n";
+                            std::cout << "Illegal Input!\n   status = 1 ! \n";
                             break;
                     }
              
                     
                 case 'd':
                     if( status == 1 ) {
-                            std::cout << "'d' key pressed!  This will do quad->biped!  \n";
+                            std::cout << "'D' key pressed!  This will do quad->biped!  \n";
                             //system("./hubo-read-trajectory -f 25 -n quad_Initial_back.traj");
                             system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 25 -i -n /home/hubo/myRepo/trajs/quad_Initial_back.txt");
+                            std:cout << " Motion in progress: quad_ready -> biped !\n":
                             status = 0;
                             break;
                     }
 
                     if( status == 0 ) {
-                            std::cout << "this motion is illegal  Robot is in biped_mode!  \n";
+                            std::cout << "Illegal Input!\n   status = 0 ! \n";
                             break;
                     }
  
 
                  case 'w':
                     if( status == 1) {
-                            std::cout << "'w' key pressed!  This will move forward!  \n";
+                            std::cout << "'W' key pressed!  This will move forward!  \n";
                             system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 25 -i -n /home/hubo/myRepo/trajs/quad_Step_forward.txt");
+                            std::cout << " Motion in progress: quad_forward ! \n";
                             break;
                     } 
                     if( status == 0) {
-                            std::cout << "this motion is illegal!   Robot is in biped_mode!\n  Press 'a' to change into quad_mode!\n";
+                            std::cout << "Illegal Input!    status = 0 ! \n";
                             break;
                     }
             
   
                  case 's':
                     if(status ==1) {
-                            std::cout << "'s' key pressed!  This will move backward!  \n";
+                            std::cout << "'S' key pressed!  This will move backward!  \n";
                             //system("./hubo-read-trajectory -f 25 -n quad_Step_backward.traj");
                             system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 25 -i -n /home/hubo/myRepo/trajs/quad_Step_backward.txt");
+                            std:cout << "Motion in progress: quad_backward ! \n";
                             break;
                     }
                     if( status == 0 ) {
-                            std::cout << "this motion is illegal!  Robot is in biped_mode!\n   Press 'a' to change into quad_mode\n";
+                            std::cout << "Illegal input!   status = 0 ! \n";
                             break;
                     }
                  default:
