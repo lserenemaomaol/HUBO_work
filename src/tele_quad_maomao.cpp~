@@ -26,13 +26,11 @@ int main(int argc, char **argv)
     {
         if ( read(STDIN_FILENO, &c, 1) == 1) {
             switch (c) {
-            
-                    
                 case 'b':
                     if( status == 0) {
                             std::cout << "'B' key pressed!\n";
                             std::cout << " Motion in progress: biped -> quad_ready !\n";
-                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/trajs/quadwalk_crouch.txt");
+                            system("/home/maomao/OtherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/MyRepos/HUBO_work/trajs/quadwalk_crouch.txt");
                             status = 1;
                              break;
                     }
@@ -48,7 +46,7 @@ int main(int argc, char **argv)
                     if( status == 1 ) {
                             std::cout << "'F' key pressed!  \n";
                             std::cout << " Motion in progress: quad_ready -> biped !\n";
-                            system("/home/hubo//hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/trajs/quadwalk_stand.txt");
+                            system("/home/maomao/OtherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/MyRepos/HUBO_work/trajs/quadwalk_stand.txt");
                             status = 0;
                             break;
                     }
@@ -64,7 +62,7 @@ int main(int argc, char **argv)
                     if( status == 1) {
                             std::cout << "'W' key pressed!  \n";
                             std::cout << " Motion in progress: quad_forward ! \n";                           
-                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/trajs/quadwalk_forward.txt");
+                            system("/home/maomao/OtherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/MyRepos/HUBO_work/trajs/quadwalk_forward.txt");
                             break;
                     } 
                     if( status == 0) {
@@ -78,7 +76,7 @@ int main(int argc, char **argv)
                     if(status ==1) {
                             std::cout << "'S' key pressed! \n";                          
                             std::cout << "Motion in progress: quad_backward ! \n";
-                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/trajs/quadwalk_back.txt");
+                            system("/home/maomao/OtherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/MyRepos/HUBO_work/trajs/quadwalk_back.txt");
                             break;
                     }
                     if( status == 0 ) {
@@ -92,7 +90,7 @@ int main(int argc, char **argv)
                     if(status ==1) {
                             std::cout << "'A' key pressed! \n"; 
                             std::cout << "Motion in progress:  Left turn by 22.5 degrees! \n";
-                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/trajs/quadwalk_turnleft.txt");
+                            system("/home/maomao/OtherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/MyRepos/HUBO_work/trajs/quadwalk_turnleft.txt");
                             break;
                     }
                     if(status == 0) {
@@ -106,7 +104,7 @@ int main(int argc, char **argv)
                     if(status == 1 ) { 
                             std::cout << "'D' key pressed ! \n";
                             std::cout << "Motion in progress: Right turn by 22.5 degrees! \n";
-                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/trajs/quadwalk_turnright.txt");
+                            system("/home/maomao/OtherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/MyRepos/HUBO_work/trajs/quadwalk_turnright.txt");
                             break;
                     }
                     if(status == 0) {
@@ -119,7 +117,7 @@ int main(int argc, char **argv)
                     if(status == 1 ) { 
                             std::cout << "'Q' key pressed ! \n";
                             std::cout << "Motion in progress: Move Left side by 5cm! \n";
-                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/trajs/quadwalk_turnright.txt");
+                            system("/home/maomao/OtherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/MyRepos/HUBO_work/trajs/quadwalk_turnright.txt");
                             break;
                     }
                     if(status == 0) {
@@ -133,7 +131,7 @@ int main(int argc, char **argv)
                     if(status == 1 ) { 
                             std::cout << "'E' key pressed ! \n";
                             std::cout << "Motion in progress: Move Right side by 5cm! \n";
-                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/trajs/quadwalk_turnright.txt");
+                            system("/home/maomao/OtherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/MyRepos/HUBO_work/trajs/quadwalk_turnright.txt");
                             break;
                     }
                     if(status == 0) {
