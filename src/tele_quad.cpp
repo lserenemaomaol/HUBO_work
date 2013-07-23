@@ -22,6 +22,7 @@ int main(int argc, char **argv)
 
     char c;
     int status=0; // status = 0 : in biped mode            status =1 : in quad mode
+    std::cout << "The tele-quad is on!\n  Type h for help in instructions! \n";
     while(1)
     {
         if ( read(STDIN_FILENO, &c, 1) == 1) {
