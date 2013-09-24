@@ -120,7 +120,7 @@ int main(int argc, char **argv)
                     if(status == 1 ) { 
                             std::cout << "'Q' key pressed ! \n";
                             std::cout << "Motion in progress: Move Left side by 5cm! \n";
-                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/HUBO_work/trajs/quadwalk_sideleft.txt");
+                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/HUBO_work/trajs/quadwalk_sideright.txt");
                             break;
                     }
                     if(status == 0) {
@@ -134,7 +134,7 @@ int main(int argc, char **argv)
                     if(status == 1 ) { 
                             std::cout << "'E' key pressed ! \n";
                             std::cout << "Motion in progress: Move Right side by 5cm! \n";
-                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/HUBO_work/trajs/quadwalk_sideright.txt");
+                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/HUBO_work/trajs/quadwalk_sideleft.txt");
                             break;
                     }
                     if(status == 0) {
