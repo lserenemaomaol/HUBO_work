@@ -1,0 +1,2 @@
+/home/maomao/MyRepo/HUBO_work/build/CMakeFiles/tele_quad.dir
+/home/maomao/MyRepo/HUBO_work/build/CMakeFiles/tele_quad_maomao.dir

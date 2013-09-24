@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maomao/MyRepo/HUBO_work/src/tele_quad_maomao.cpp
+iostream
+-
+fstream
+-
+termio.h
+-
+stdio.h
+-
+unistd.h
+-
+fcntl.h
+-
+stdlib.h
+-
+cstdlib
+-
+
