@@ -124,6 +124,19 @@ tele_quad_maomao/fast:
 	$(MAKE) -f CMakeFiles/tele_quad_maomao.dir/build.make CMakeFiles/tele_quad_maomao.dir/build
 .PHONY : tele_quad_maomao/fast
 
+#=============================================================================
+# Target rules for targets named tele_quad_new
+
+# Build rule for target.
+tele_quad_new: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tele_quad_new
+.PHONY : tele_quad_new
+
+# fast build rule for target.
+tele_quad_new/fast:
+	$(MAKE) -f CMakeFiles/tele_quad_new.dir/build.make CMakeFiles/tele_quad_new.dir/build
+.PHONY : tele_quad_new/fast
+
 src/tele_quad.o: src/tele_quad.cpp.o
 .PHONY : src/tele_quad.o
 
@@ -172,6 +185,30 @@ src/tele_quad_maomao.cpp.s:
 	$(MAKE) -f CMakeFiles/tele_quad_maomao.dir/build.make CMakeFiles/tele_quad_maomao.dir/src/tele_quad_maomao.cpp.s
 .PHONY : src/tele_quad_maomao.cpp.s
 
+src/tele_quad_new.o: src/tele_quad_new.cpp.o
+.PHONY : src/tele_quad_new.o
+
+# target to build an object file
+src/tele_quad_new.cpp.o:
+	$(MAKE) -f CMakeFiles/tele_quad_new.dir/build.make CMakeFiles/tele_quad_new.dir/src/tele_quad_new.cpp.o
+.PHONY : src/tele_quad_new.cpp.o
+
+src/tele_quad_new.i: src/tele_quad_new.cpp.i
+.PHONY : src/tele_quad_new.i
+
+# target to preprocess a source file
+src/tele_quad_new.cpp.i:
+	$(MAKE) -f CMakeFiles/tele_quad_new.dir/build.make CMakeFiles/tele_quad_new.dir/src/tele_quad_new.cpp.i
+.PHONY : src/tele_quad_new.cpp.i
+
+src/tele_quad_new.s: src/tele_quad_new.cpp.s
+.PHONY : src/tele_quad_new.s
+
+# target to generate assembly for a file
+src/tele_quad_new.cpp.s:
+	$(MAKE) -f CMakeFiles/tele_quad_new.dir/build.make CMakeFiles/tele_quad_new.dir/src/tele_quad_new.cpp.s
+.PHONY : src/tele_quad_new.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,12 +219,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... tele_quad"
 	@echo "... tele_quad_maomao"
+	@echo "... tele_quad_new"
 	@echo "... src/tele_quad.o"
 	@echo "... src/tele_quad.i"
 	@echo "... src/tele_quad.s"
 	@echo "... src/tele_quad_maomao.o"
 	@echo "... src/tele_quad_maomao.i"
 	@echo "... src/tele_quad_maomao.s"
+	@echo "... src/tele_quad_new.o"
+	@echo "... src/tele_quad_new.i"
+	@echo "... src/tele_quad_new.s"
 .PHONY : help
 
 

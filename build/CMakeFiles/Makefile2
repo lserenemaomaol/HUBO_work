@@ -123,6 +123,41 @@ clean: CMakeFiles/tele_quad_maomao.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/tele_quad_new.dir
+
+# All Build rule for target.
+CMakeFiles/tele_quad_new.dir/all:
+	$(MAKE) -f CMakeFiles/tele_quad_new.dir/build.make CMakeFiles/tele_quad_new.dir/depend
+	$(MAKE) -f CMakeFiles/tele_quad_new.dir/build.make CMakeFiles/tele_quad_new.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/maomao/MyRepo/HUBO_work/build/CMakeFiles  3
+	@echo "Built target tele_quad_new"
+.PHONY : CMakeFiles/tele_quad_new.dir/all
+
+# Include target in all.
+all: CMakeFiles/tele_quad_new.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tele_quad_new.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maomao/MyRepo/HUBO_work/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tele_quad_new.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maomao/MyRepo/HUBO_work/build/CMakeFiles 0
+.PHONY : CMakeFiles/tele_quad_new.dir/rule
+
+# Convenience name for target.
+tele_quad_new: CMakeFiles/tele_quad_new.dir/rule
+.PHONY : tele_quad_new
+
+# clean rule for target.
+CMakeFiles/tele_quad_new.dir/clean:
+	$(MAKE) -f CMakeFiles/tele_quad_new.dir/build.make CMakeFiles/tele_quad_new.dir/clean
+.PHONY : CMakeFiles/tele_quad_new.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/tele_quad_new.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

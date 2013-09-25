@@ -41,4 +41,5 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/tele_quad.dir/DependInfo.cmake"
   "CMakeFiles/tele_quad_maomao.dir/DependInfo.cmake"
+  "CMakeFiles/tele_quad_new.dir/DependInfo.cmake"
   )
