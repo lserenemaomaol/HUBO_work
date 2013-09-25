@@ -205,7 +205,10 @@ static void H_pressed() {
     std::cout << "e :          side   right  ,   status=1   required         \n";
 }
 static void U_pressed() {
-
+    ofstream myfile;
+    myfile.open("/home/maomao/maomao/MyRepos/HUBO_work/trajs/quadwalk_sideright.txt");
+    myfile.close();
+    
 }
 
 static int
