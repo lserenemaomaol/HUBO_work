@@ -1,1 +1,0 @@
-/usr/bin/c++   -O3 -DNDEBUG    CMakeFiles/tele_quad.dir/src/tele_quad.cpp.o  -o tele_quad -rdynamic 
