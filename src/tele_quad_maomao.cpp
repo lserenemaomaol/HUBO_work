@@ -38,9 +38,7 @@ int main(int argc, char **argv)
     {
         if ( read(STDIN_FILENO, &c, 1) == 1) {
             switch (c) {
-                case 'U':
-                case 'u': 
-                         break;
+
                 case 'B':    
                 case 'b':
                     if( status == 0) {
@@ -67,6 +65,16 @@ int main(int argc, char **argv)
                  case 'w':
                     if( status == 1) {
                             W_pressed();
+                            break;
+                    } 
+                    if( status == 0) {
+                            key_help();
+                            break;
+                    }
+                 case 'U':
+                 case 'u':
+                    if( status == 1) {
+                            U_pressed();
                             break;
                     } 
                     if( status == 0) {
@@ -163,6 +171,12 @@ static void W_pressed() {
     system("/home/maomao/OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/maomao/MyRepos/HUBO_work/trajs/quadwalk_forward.txt");
 }
 
+static void U_pressed() {
+    std::cout << "'W' key pressed!  \n";
+    std::cout << " Motion in progress:  fast quad_forward ! \n";                           
+    system("/home/maomao/OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/maomao/MyRepos/HUBO_work/trajs/quadwalk_forward_fast.txt");
+}
+
 static void S_pressed() {
     std::cout << "'S' key pressed! \n";                          
     std::cout << "Motion in progress: quad_backward ! \n";
@@ -198,15 +212,14 @@ static void H_pressed() {
     std::cout << "b :          crouch down   ,   biped->quad   status->1   \n";
     std::cout << "f :          stand  up     ,   quad ->biped  status->0   \n";
     std::cout << "w :          quad-forward  ,   status=1   required         \n";
+    std::cout << "u :   fast   quad-forward  ,   status=1   required         \n";
     std::cout << "s :          quad_backward ,   status=1   required         \n";
     std::cout << "a :          turn   left   ,   status=1   required         \n";
     std::cout << "d :          turn   right  ,   status=1   required         \n";
     std::cout << "q :          side   left   ,   status=1   required         \n";
     std::cout << "e :          side   right  ,   status=1   required         \n";
 }
-static void U_pressed() {
 
-}
 
 static int
 tty_unbuffered(int fd)      /* put terminal into a raw mode */
