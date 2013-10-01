@@ -22,7 +22,7 @@ static void D_pressed();
 static void Q_pressed();
 static void E_pressed();
 static void H_pressed();
-static void U_pressed();
+
 
 static struct termios save_termios;
 static int  ttysavefd = -1;
@@ -66,16 +66,6 @@ int main(int argc, char **argv)
                  case 'w':
                     if( status == 1) {
                             W_pressed();
-                            break;
-                    } 
-                    if( status == 0) {
-                            key_help();
-                            break;
-                    }
-                 case 'U':
-                 case 'u':
-                    if( status == 1) {
-                            U_pressed();
                             break;
                     } 
                     if( status == 0) {
@@ -170,11 +160,7 @@ static void W_pressed() {
     system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/HUBO_work/trajs/quadwalk_forward.txt");
 }
 
-static void U_pressed() {
-    std::cout << "'W' key pressed!  \n";
-    std::cout << " Motion in progress: fast quad_forward ! \n";                           
-    system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/HUBO_work/trajs/quadwalk_forward_fast.txt");
-}
+    
 
 static void S_pressed() {
     std::cout << "'S' key pressed! \n";                          

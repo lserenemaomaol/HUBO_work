@@ -8,6 +8,5 @@ set(CMAKE_C_FLAGS "-std=gnu99")
 set( CMAKE_VERBOSE_MAKEFILE true )
 
 add_executable(tele_quad "src/tele_quad.cpp")
-add_executable(tele_quad_new "src/tele_quad_new.cpp")
 add_executable(tele_quad_maomao "src/tele_quad_maomao.cpp")
 #target_link_libraries(tele_quad)
