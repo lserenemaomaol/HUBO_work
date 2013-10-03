@@ -156,37 +156,37 @@ static void key_help() {
 static void B_pressed() {   
     std::cout << "'B' key pressed!\n";
     std::cout << " Motion in progress: biped -> quad_ready !\n";
-    system("/home/maomao/OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/maomao/MyRepos/HUBO_work/trajs/quadwalk_crouch.txt");
+    system("../../../OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n ../trajs/quadwalk_crouch.txt");
 }
 
 static void F_pressed() {
     std::cout << "'F' key pressed!  \n";
     std::cout << " Motion in progress: quad_ready -> biped !\n";
-    system("/home/maomao/OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/maomao/MyRepos/HUBO_work/trajs/quadwalk_stand.txt");
+    system("../../../OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n ../trajs/quadwalk_stand.txt");
 }
 
 static void W_pressed() {
     std::cout << "'W' key pressed!  \n";
     std::cout << " Motion in progress: quad_forward ! \n";                           
-    system("/home/maomao/OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/maomao/MyRepos/HUBO_work/trajs/quadwalk_forward.txt");
+    system("../../../OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n ../trajs/quadwalk_forward.txt");
 }
 
 static void U_pressed() {
     std::cout << "'W' key pressed!  \n";
     std::cout << " Motion in progress:  fast quad_forward ! \n";                           
-    system("/home/maomao/OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/maomao/MyRepos/HUBO_work/trajs/quadwalk_forward_fast.txt");
+    system("../../../OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n ../trajs/quadwalk_forward_fast.txt");
 }
 
 static void S_pressed() {
     std::cout << "'S' key pressed! \n";                          
     std::cout << "Motion in progress: quad_backward ! \n";
-    system("/home/maomao/OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/maomao/MyRepos/HUBO_work/trajs/quadwalk_back.txt");
+    system("../../../OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n ../trajs/quadwalk_back.txt");
 }
 
 static void A_pressed() {
     std::cout << "'A' key pressed! \n"; 
     std::cout << "Motion in progress:  Left turn by 22.5 degrees! \n";
-    system("/home/maomao/OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/maomao/MyRepos/HUBO_work/trajs/quadwalk_turnleft.txt");
+    system("../../../OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n ../trajs/quadwalk_turnleft.txt");
 }
 
 static void D_pressed() {
@@ -198,13 +198,13 @@ static void D_pressed() {
 static void Q_pressed() {
     std::cout << "'Q' key pressed ! \n";
     std::cout << "Motion in progress: Move Left side by 5cm! \n";
-    system("/home/maomao/OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/maomao/MyRepos/HUBO_work/trajs/quadwalk_sideright.txt");
+    system("../../../OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n ../trajs/quadwalk_sideright.txt");
 }
 
 static void E_pressed() {
     std::cout << "'E' key pressed ! \n";
     std::cout << "Motion in progress: Move Right side by 5cm! \n";
-    system("/home/maomao/OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/maomao/maomao/MyRepos/HUBO_work/trajs/quadwalk_sideleft.txt");
+    system("../../../OtherRepo/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n ../trajs/quadwalk_sideleft.txt");
 }
 
 static void H_pressed() {
