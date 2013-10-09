@@ -73,6 +73,18 @@ int main(int argc, char **argv)
                             std::cout << "Type h for help !\n";
                             break;
                     }
+                 case 'x':
+                    if( status == 1) {
+                            std::cout << "'x' key pressed!  \n";
+                            std::cout << " Motion in progress: fast quad_forward ! \n";                           
+                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 200 -i -n /home/hubo/hongfei/myRepos/HUBO_work/trajs/quadwalk_forward_043.txt");
+                            break;
+                    } 
+                    if( status == 0) {
+                            std::cout << "Illegal Input!    status = 0 ! \n";
+                            std::cout << "Type h for help !\n";
+                            break;
+                    }
             
   
                  case 's':
@@ -168,6 +180,7 @@ int main(int argc, char **argv)
                     std::cout << "q :          side   left   ,   status=1   required         \n";
                     std::cout << "e :          side   right  ,   status=1   required         \n";
                     std::cout << "c :          climb  up     ,   status=1   required         \n";
+                    std::cout << "x :          fast forward  ,   status=1   required         \n";
                  break;
 
                  default:
