@@ -167,6 +167,19 @@ int main(int argc, char **argv)
                             std::cout << "Type h for help !\n";
                             break;
                     }
+
+                 case 'o':
+                    if( status == 1) {
+                            std::cout << "'o' key pressed!  \n";
+                            std::cout << " Motion in progress: Step over bars ! \n";                           
+                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 200 -i -n /home/hubo/hongfei/myRepos/HUBO_work/trajs/quadwalk_overbars.txt");
+                            break;
+                    } 
+                    if( status == 0) {
+                            std::cout << "Illegal Input!    status = 0 ! \n";
+                            std::cout << "Type h for help !\n";
+                            break;
+                    }
                       
                  case 'h':
                      
@@ -181,6 +194,7 @@ int main(int argc, char **argv)
                     std::cout << "e :          side   right  ,   status=1   required         \n";
                     std::cout << "c :          climb  up     ,   status=1   required         \n";
                     std::cout << "x :          fast forward  ,   status=1   required         \n";
+                    std::cout << "o :          step ovre bars,   status=1   required         \n";
                  break;
 
                  default:
