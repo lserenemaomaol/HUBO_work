@@ -33,7 +33,7 @@ int main(int argc, char **argv)
                     if( status == 0) {
                             std::cout << "'B' key pressed!\n";
                             std::cout << " Motion in progress: biped -> quad_ready !\n";
-                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/HUBO_work/trajs/quadwalk_crouch.txt");		
+                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/HUBO_work/trajs/BipedOverBricks.txt");		
                             status = 1;
                              break;
                     }
@@ -49,7 +49,7 @@ int main(int argc, char **argv)
                     if( status == 1 ) {
                             std::cout << "'F' key pressed!  \n";
                             std::cout << " Motion in progress: quad_ready -> biped !\n";
-                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 200 -i -n /home/hubo/hongfei/myRepos/HUBO_work/trajs/quadwalk_stand.txt");
+                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 200 -i -n /home/hubo/hongfei/myRepos/HUBO_work/trajs/BipedOverBricks.txt");
                             status = 0;
                             break;
                     }
@@ -60,7 +60,7 @@ int main(int argc, char **argv)
                             break;
                     }
  
-
+/*
                  case 'w':
                     if( status == 1) {
                             std::cout << "'W' key pressed!  \n";
@@ -198,7 +198,7 @@ int main(int argc, char **argv)
                  break;
 
                  default:
-                    std::cout << "Undefined keys!  type h for instruction help! \n";
+                    std::cout << "Undefined keys!  type h for instruction help! \n"; */
 
             }
         }
