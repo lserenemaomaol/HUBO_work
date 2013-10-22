@@ -33,7 +33,7 @@ int main(int argc, char **argv)
                     if( status == 0) {
                             std::cout << "'B' key pressed!\n";
                             std::cout << " Motion in progress: biped -> quad_ready !\n";
-                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/HUBO_work/trajs/BipedOverBricks_v6.txt");		
+                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/HUBO_work/trajs/BipedOverBricks_v7.txt");		
                             status = 1;
                              break;
                     }
@@ -49,7 +49,7 @@ int main(int argc, char **argv)
                     if( status == 1 ) {
                             std::cout << "'F' key pressed!  \n";
                             std::cout << " Motion in progress: quad_ready -> biped !\n";
-                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/HUBO_work/trajs/BipedOverBricks_v6.txt");
+                            system("/home/hubo/hongfei/otherRepos/hubo-read-trajectory/hubo-read-trajectory -f 100 -i -n /home/hubo/hongfei/myRepos/HUBO_work/trajs/BipedOverBricks_v7.txt");
                             status = 0;
                             break;
                     }
